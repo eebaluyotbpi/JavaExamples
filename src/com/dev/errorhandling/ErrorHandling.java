@@ -1,0 +1,18 @@
+package com.dev.errorhandling;
+
+public class ErrorHandling {
+    static void main(String[] args) {
+        {
+            int i = 1;
+            try {
+                i++;
+
+            } catch (Exception e) {
+                i++;
+            } finally {
+                i++;
+            }
+            System.out.println(i);
+        }
+    }
+}
