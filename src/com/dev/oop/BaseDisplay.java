@@ -2,17 +2,19 @@ package com.dev.oop;
 
 
 class Base {
-    static void display() {
+     void display() {
         System.out.println("display");
     }
 }
 
 class Derived extends Base {
 
+   @Override
+    void display(){
+       super.display();
+       System.out.println("Derived display");
+   }
 
-    static void display() {
-        System.out.println("display Derived");
-    }
 }
 // Static cannot be override
 
